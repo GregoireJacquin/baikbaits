@@ -77,9 +77,8 @@ const ThankYouPage = async ({
             </h1>
             {order._isPaid ? (
               <p className='mt-2 text-base text-muted-foreground'>
-                Votre commande a été payée et votre commande est
-                disponible en téléchargement ci-dessous. Nous avons envoyé
-                votre reçu et les détails de votre commande à {' '}
+                Votre commande a été payée. <br/>
+                Nous avons envoyé votre reçu et les détails de votre commande à {' '}
                 {typeof order.user !== 'string' ? (
                   <span className='font-medium text-gray-900'>
                     {order.user.email}
@@ -97,7 +96,7 @@ const ThankYouPage = async ({
 
             <div className='mt-16 text-sm font-medium'>
               <div className='text-muted-foreground'>
-                Commande N°.
+                N° de commande
               </div>
               <div className='mt-2 text-gray-900'>
                 {order.id}
@@ -140,7 +139,7 @@ const ThankYouPage = async ({
                             </h3>
 
                             <p className='my-1'>
-                              Category: {label}
+                              Catégorie : {label}
                             </p>
                           </div>
 
@@ -196,7 +195,7 @@ const ThankYouPage = async ({
                 <Link
                   href='/products'
                   className='text-sm font-medium text-blue-600 hover:text-blue-500'>
-                  Continuez votre shopping &rarr;
+                  Continuez vos achats &rarr;
                 </Link>
               </div>
             </div>

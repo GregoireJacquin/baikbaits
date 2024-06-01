@@ -8,6 +8,7 @@ import { formatPrice } from '@/lib/utils'
 import { Check, Shield } from 'lucide-react'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import {Textarea} from "@/components/ui/textarea";
 
 interface PageProps {
   params: {
@@ -99,9 +100,9 @@ const Page = async ({ params }: PageProps) => {
               </div>
 
               <div className='mt-4 space-y-6'>
-                <p className='text-base text-muted-foreground'>
-                  {product.description}
-                </p>
+                <Textarea className='text-base text-muted-foreground disabled:opacity-100 border-none resize-none h-64' disabled>
+                {product.description}
+                </Textarea>
               </div>
 
              {/* <div className='mt-6 flex items-center'>
@@ -145,12 +146,12 @@ const Page = async ({ params }: PageProps) => {
         </div>
       </div>
 
-      <ProductReel
+     {/* <ProductReel
         href='/products'
         query={{ category: product.category, limit: 4 }}
         title={`Similaire ${label}`}
         subtitle={`Parcourir des produits similaires de haute qualité ${label} juste comme '${product.name}'`}
-      />
+      />*/}
     </MaxWidthWrapper>
   )
 }

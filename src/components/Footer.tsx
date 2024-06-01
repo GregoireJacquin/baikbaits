@@ -14,11 +14,11 @@ const Footer = () => {
   ]
 
   return (
-    <footer className='bg-white flex-grow-0'>
+    <footer className='bg-neutral-800 flex-grow-0'>
       <MaxWidthWrapper>
         <div className='py-10 md:flex md:items-center md:justify-between'>
           <div className='text-center md:text-left'>
-            <p className='text-sm text-muted-foreground'>
+            <p className='text-sm text-muted-foreground text-white'>
               Copyright &copy; {new Date().getFullYear()}
             </p>
           </div>
@@ -27,17 +27,17 @@ const Footer = () => {
             <div className='flex space-x-8'>
               <Link
                 href='#'
-                className='text-sm text-muted-foreground hover:text-gray-600'>
+                className='text-sm text-muted-foreground hover:text-gray-600 text-white'>
                 Mentions légales
               </Link>
               <Link
                 href='#'
-                className='text-sm text-muted-foreground hover:text-gray-600'>
+                className='text-sm text-muted-foreground hover:text-gray-600 text-white'>
                 Politique de confidentialité
               </Link>
               <Link
                 href='#'
-                className='text-sm text-muted-foreground hover:text-gray-600'>
+                className='text-sm text-muted-foreground hover:text-gray-600 text-white'>
                 Politique cookie
               </Link>
             </div>

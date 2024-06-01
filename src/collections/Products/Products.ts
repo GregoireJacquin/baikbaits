@@ -233,7 +233,7 @@ export const Products: CollectionConfig = {
       type: 'array',
       label: 'Product images',
       minRows: 1,
-      maxRows: 4,
+      maxRows: 5,
       required: true,
       labels: {
         singular: 'Image',
