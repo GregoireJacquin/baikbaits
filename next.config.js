@@ -8,7 +8,7 @@ const nextConfig = {
 			},
 			{
 				protocol: "https",
-				hostname: "baikbaits.vercel.app",
+				hostname: "baikbaits-production.up.railway.app",
 			},
 		],
 	},
